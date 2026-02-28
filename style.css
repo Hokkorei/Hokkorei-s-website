@@ -1,0 +1,161 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('https://shared.akamai.steamstatic.com/community_assets/images/items/1512480/bbfa511541b6196916a8d3e06e827368dab04872.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'VT323', 'Courier New', monospace;
+    font-size: 2px;
+    color: #fff;
+    padding: 14px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: rgba(26, 11, 46, 0.85);
+    padding: 30px;
+    backdrop-filter: blur(5px);
+    position: relative;
+    z-index: 10;
+}
+
+h1, h2 {
+    font-family: 'Press Start 2P', cursive;
+    line-height: 1.5;
+}
+
+h1 {
+    font-size: 50px;
+    color: #ff69b4;
+    text-shadow: 4px 4px 0 #4b0082, 7px 7px 0 #8c00ff;
+    text-align: center;
+    margin: 2px 0;
+    word-break: break-word;
+}
+
+h2 {
+    font-size: 20px;
+    color: #8c00ff;
+    border-left: 8px solid #7819a386;
+    border-bottom: 1px dotted #4b0082;
+    padding: 10px 15px;
+    margin: 25px 0;
+}
+
+p, li, a, marquee {
+    font-family: 'VT323', 'Courier New', monospace;
+    font-size: 20px;
+}
+
+
+
+.main-content {
+    display: flex;
+    gap: 30px;
+    margin: 30px 0;
+}
+
+.left-column {
+    flex: 2;
+}
+
+.right-column {
+    flex: 1;
+}
+
+
+
+ul {
+    list-style-type: square;
+    padding-left: 25px;
+}
+
+li {
+    margin: 8px 0;
+    color: #b6bdff;
+}
+
+a {
+    color: #8c00ff;
+    text-decoration: none;
+    border-bottom: 2px dotted #6969ff;
+}
+
+
+.version {
+    text-align: center;
+    font-size: 26px;
+    background: #1800822d;
+    padding: 30px;
+    position: relative;
+}
+
+.version-image {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto 15px auto;
+    image-rendering: pixelated;
+}
+
+
+.footer {
+    text-align: center;
+    font-size: 26px;
+    padding: 35px;
+}
+
+
+#pixle1 {
+position: fixed;
+bottom: 0px;
+left: -250px;
+z-index: 9999;
+-webkit-user-select: none;
+image-rendering: pixelated;
+-moz-user-select: none;
+-ms-user-select: none;
+width: 800px;
+height: auto;
+display: block;
+user-select: none;
+pointer-events: none;
+}
+
+
+
+
+#pixle2 {
+position: fixed;
+bottom:-20px;
+right: -310px;
+z-index: 9999;
+width: 1000px;
+height: auto;
+display: block;
+image-rendering: pixelated;
+user-select: none;
+pointer-events: none;
+}
+
+
+#pixle3 {
+position: fixed;
+bottom:122px;
+right: 50px;
+z-index: 9999;
+width: 290px;
+height: auto;
+display: block;
+image-rendering: pixelated;
+user-select: none;
+pointer-events: none;
+margin: 0 auto 15px auto;
+}
+
