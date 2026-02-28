@@ -1,8 +1,14 @@
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    outline: none !important;
+    -webkit-tap-highlight-color: transparent !important;
+}
+
+:focus, :active, :hover {
+    outline: 0 !important;
+    -webkit-tap-highlight-color: transparent !important;
 }
 
 body {
@@ -10,7 +16,7 @@ body {
     background-size: cover;
     background-attachment: fixed;
     font-family: 'VT323', 'Courier New', monospace;
-    font-size: 2px;
+    font-size: 16px;
     color: #fff;
     padding: 14px;
 }
@@ -42,18 +48,16 @@ h1 {
 h2 {
     font-size: 20px;
     color: #8c00ff;
-    border-left: 8px solid #7819a386;
+    border-left: 8px solid #7819a3;
     border-bottom: 1px dotted #4b0082;
     padding: 10px 15px;
     margin: 25px 0;
 }
 
-p, li, a, marquee {
+p, li, a {
     font-family: 'VT323', 'Courier New', monospace;
     font-size: 20px;
 }
-
-
 
 .main-content {
     display: flex;
@@ -68,8 +72,6 @@ p, li, a, marquee {
 .right-column {
     flex: 1;
 }
-
-
 
 ul {
     list-style-type: square;
@@ -87,7 +89,6 @@ a {
     border-bottom: 2px dotted #6969ff;
 }
 
-
 .version {
     text-align: center;
     font-size: 26px;
@@ -104,13 +105,11 @@ a {
     image-rendering: pixelated;
 }
 
-
 .footer {
     text-align: center;
     font-size: 26px;
     padding: 35px;
 }
-
 
 #pixle1 {
     position: fixed;
@@ -128,9 +127,6 @@ a {
     pointer-events: none; 
 }
 
-
-
-
 #pixle2 {
     position: fixed;
     bottom:-20px;
@@ -144,7 +140,6 @@ a {
     pointer-events: none; 
 }
 
-
 #pixle3 {
     position: fixed;
     bottom:122px;
@@ -156,6 +151,43 @@ a {
     image-rendering: pixelated;
     user-select: none;
     pointer-events: none; 
-    margin: 0 auto 15px auto;  
 }
 
+@media (inverted-colors: inverted) {
+    * {
+        background-color: transparent !important;
+        color-scheme: dark !important;
+    }
+    
+    body {
+        background-image: none !important;
+        background-color: #000 !important;
+    }
+    
+    img, video, iframe {
+        filter: invert(1) hue-rotate(180deg) !important;
+    }
+}
+
+:root {
+    color-scheme: dark light;
+    forced-color-adjust: none;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-image: url('https://shared.akamai.steamstatic.com/community_assets/images/items/1512480/bbfa511541b6196916a8d3e06e827368dab04872.jpg') !important;
+        background-color: #000 !important;
+    }
+}
+
+* {
+    forced-color-adjust: none !important;
+    color-scheme: only dark !important;
+}
+
+body {
+    background-color: #000 !important;
+    background-image: url('https://shared.akamai.steamstatic.com/community_assets/images/items/1512480/bbfa511541b6196916a8d3e06e827368dab04872.jpg') !important;
+    background-blend-mode: normal !important;
+}
