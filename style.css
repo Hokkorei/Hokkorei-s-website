@@ -93,14 +93,14 @@ a {
     font-size: 26px;
     background: #1800822d;
     padding: 30px;
-    position: relative;
+    position: relative;  
 }
 
 .version-image {
-    width: 100px;
+    width: 100px;  
     height: auto;
     display: block;
-    margin: 0 auto 15px auto;
+    margin: 0 auto 15px auto;  
     image-rendering: pixelated;
 }
 
@@ -113,49 +113,49 @@ a {
 
 
 #pixle1 {
-position: fixed;
-bottom: 0px;
-left: -250px;
-z-index: 9999;
--webkit-user-select: none;
-image-rendering: pixelated;
--moz-user-select: none;
--ms-user-select: none;
-width: 800px;
-height: auto;
-display: block;
-user-select: none;
-pointer-events: none;
+    position: fixed;
+    bottom: 0px;
+    left: -250px;
+    z-index: 9999;
+    -webkit-user-select: none;
+    image-rendering: pixelated;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    width: 800px;
+    height: auto;
+    display: block;
+    user-select: none;
+    pointer-events: none; 
 }
 
 
 
 
 #pixle2 {
-position: fixed;
-bottom:-20px;
-right: -310px;
-z-index: 9999;
-width: 1000px;
-height: auto;
-display: block;
-image-rendering: pixelated;
-user-select: none;
-pointer-events: none;
+    position: fixed;
+    bottom:-20px;
+    right: -310px;
+    z-index: 9999;
+    width: 1000px;
+    height: auto;
+    display: block;
+    image-rendering: pixelated;
+    user-select: none;
+    pointer-events: none; 
 }
 
 
 #pixle3 {
-position: fixed;
-bottom:122px;
-right: 50px;
-z-index: 9999;
-width: 290px;
-height: auto;
-display: block;
-image-rendering: pixelated;
-user-select: none;
-pointer-events: none;
-margin: 0 auto 15px auto;
+    position: fixed;
+    bottom:122px;
+    right: 50px;
+    z-index: 9999;
+    width: 290px;
+    height: auto;
+    display: block;
+    image-rendering: pixelated;
+    user-select: none;
+    pointer-events: none; 
+    margin: 0 auto 15px auto;  
 }
 
