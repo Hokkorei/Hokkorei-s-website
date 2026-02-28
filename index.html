@@ -2,7 +2,8 @@
 <html lang="ar">
 <head>
     <meta charset="UTF-8">
-    <title>Hokkorei websit</title>
+    <title>Hokkorei website</title>
+    <!-- ✅ الطريقة الصحيحة لربط CSS -->
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
 </head>
@@ -11,8 +12,10 @@
     <div class="container">
         <div class="header">
             <h1>text1</h1>
-            <marquee behavior="alternate" scrollamount="5" class="top-marquee">text4</marquee>
+            <!-- ✅ بديل marquee بحركة CSS -->
+            <div class="marquee-text">text4</div>
         </div>
+        
         <div class="main-content">
             <div class="left-column">
                 <div class="featured-box">
@@ -26,6 +29,7 @@
                         <p>text15</p>
                     </div>
                 </div>
+                
                 <div class="whatsnew-box">
                     <h2>text16</h2>
                     <ul>
@@ -44,7 +48,6 @@
                     <p>text23</p>
                 </div>
 
-
                 <div class="links-box">
                     <h2>Links</h2>
                     <ul>
@@ -53,23 +56,26 @@
                         <li><a href="https://www.reddit.com/user/Hokkorei/" target="_blank">Reddit</a></li>
                     </ul>
                 </div>
+            </div>
+        </div> <!-- نهاية main-content -->
 
         <div class="guestbook">
             <p>text32</p>
         </div>
 
+        <!-- ✅ الصورة حطها هنا عشان تكون منظمة -->
+        <div class="gif-section">
+            <img src="https://raw.githubusercontent.com/Hokkorei/Hokkorei-s-website/main/ezgif-2abd63525c0178f3.gif" alt="pixel gif" class="pixel-gif">
+        </div>
+
         <div class="footer">
-            <p>V7 <span id="year"></span> </p>
+            <p>V7 <span id="year"></span></p>
             <p>be Nice <span id="created"></span> | Nice as always <span id="updated"></span></p>
         </div>
-    </div>
-<div>
-<img src="https://github.com/Hokkorei/Hokkorei-s-website/blob/main/ezgif-2abd63525c0178f3.gif?raw=true" alt="">
+    </div> <!-- نهاية container -->
 
-
-    
-</div>
     <div id="gif-container"></div>
-    <script src="https://raw.githubusercontent.com/Hokkorei/Hokkorei-s-website/refs/heads/main/style.css"></script>
+    <!-- ✅ امسح هذا السطر اللي تحت، مو محتاج JavaScript للـ CSS -->
+    <!-- <script src="https://raw.githubusercontent.com/Hokkorei/Hokkorei-s-website/refs/heads/main/style.css"></script> -->
 </body>
 </html>
