@@ -1,89 +1,191 @@
-<!DOCTYPE html>
-<html lang="ar">
-<head>
-    <meta charset="UTF-8">
-    <title>Hokkorei website</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
-</head>
-<body>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none !important;
+    -webkit-tap-highlight-color: transparent !important;
+    filter: none !important;
+}
 
-    <div id="pixle1">
-        <img id="pixle1" src="https://github.com/Hokkorei/Hokkorei-s-website/blob/main/F%20pixle/pixle%20f%201.gif?raw=true" alt="pixel gif">
-    </div>
+:focus, :active, :hover {
+    outline: 0 !important;
+    -webkit-tap-highlight-color: transparent !important;
+}
 
-    <div id="pixle2">
-        <img id="pixle2" src="https://github.com/Hokkorei/Hokkorei-s-website/blob/main/F%20pixle/pixle%20f%202%20V2.gif?raw=true" alt="pixel gif2">
-    </div>
+html {
+    filter: none !important;
+    background-color: transparent !important;
+}
 
-    <div class="container">
-        <div class="header">
-            <h1>Welcome to my site</h1>
-            <marquee behavior="alternate" scrollamount="2" class="top-marquee">by Hokkorei</marquee>
-        </div>
-        
-        <div class="main-content">
-            <div class="left-column">
-                <div class="featured-box">
-                    <h2>you are new here huh ?</h2>
-                    <div class="featured-item">
-                        <p><strong>Who am I?</strong> - I'm Osama and this is my first website.</p>
-                        <p>I am a <strong>Steam Deck</strong> user</p>
-                    </div>
-                    <div class="featured-item">
-                        <p>Take your time and enjoy looking at my wonderful photos.</p>
-                        <p>And remember our brothers in Palestine</p>
-                    </div>
-                </div>
-                
-                <div class="whatsnew-box">
-                    <h2>Works</h2>
-                    <ul>
-                        <li>Improve my English</li>
-                        <li>Learn ASL</li>
-                        <li>I created my own MP3 player from scratch</li>
-                        <li>I will finish all the games I haven't finished.</li>
-                    </ul>
-                </div>
-            </div>
+body {
+    background-image: url('https://shared.akamai.steamstatic.com/community_assets/images/items/1512480/bbfa511541b6196916a8d3e06e827368dab04872.jpg') !important;
+    background-size: cover !important;
+    background-attachment: fixed !important;
+    background-color: #0a0a2a !important;
+    font-family: 'VT323', 'Courier New', monospace;
+    font-size: 16px;
+    color: #fff !important;
+    padding: 14px;
+}
 
-            <div class="right-column">
-                <div class="character-box">
-                    <h2>Friend Sites</h2>
-                    <li><a href="https://nedvedsed.com/" target="_blank">NedVedSed</a></li>
-                    <li><a href="https://hbshhh.github.io/my-little-personal-museum.github.io/" target="_blank">HBS</a></li>
-                </div>
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: rgba(26, 11, 46, 0.85) !important;
+    padding: 30px;
+    backdrop-filter: blur(5px) !important;
+    position: relative;
+    z-index: 10;
+}
 
-                <div class="links-box">
-                    <h2>Links</h2>
-                    <ul>
-                        <li><a href="https://www.youtube.com/@Hokkorei" target="_blank">Youtube</a></li>
-                        <li><a href="https://steamcommunity.com/id/Hokkorei/" target="_blank">Steam</a></li>
-                        <li><a href="https://www.reddit.com/user/Hokkorei/" target="_blank">Reddit</a></li>
-                        <li><a href="https://infinitebacklog.net/users/hokkorei" target="_blank">Infinitebacklog</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+h1, h2 {
+    font-family: 'Press Start 2P', cursive;
+    line-height: 1.5;
+}
 
-        <div class="song">
-            <p>It represents me:</p>
-            <div class="gallery" id="gallery"></div>
-        </div>
+h1 {
+    font-size: 50px;
+    color: #ff69b4;
+    text-shadow: 4px 4px 0 #4b0082, 7px 7px 0 #8c00ff;
+    text-align: center;
+    margin: 2px 0;
+    word-break: break-word;
+}
 
-        <div class="version">
-            <p>The site will be updated regularly</p>
-            <p>V7.7</p>
-            <img id="pixle3" src="https://github.com/Hokkorei/Hokkorei-s-website/blob/main/F%20pixle/pixle%20f3%20V2.gif?raw=true" alt="pixel gif3" class="version-image">
-        </div>
+h2 {
+    font-size: 20px;
+    color: #8c00ff;
+    border-left: 8px solid #7819a3;
+    border-bottom: 1px dotted #4b0082;
+    padding: 10px 15px;
+    margin: 25px 0;
+}
 
-        <div class="footer">
-            <p>be Nice | Nice as always <span id="updated"></span></p>
-        </div>
-    </div>
+p, li, a {
+    font-family: 'VT323', 'Courier New', monospace;
+    font-size: 20px;
+}
 
-    <div id="gif-container"></div>
+.main-content {
+    display: flex;
+    gap: 30px;
+    margin: 30px 0;
+}
 
-    <script src="javascript.js"></script>
-</body>
-</html>
+.left-column {
+    flex: 2;
+}
+
+.right-column {
+    flex: 1;
+}
+
+ul {
+    list-style-type: square;
+    padding-left: 25px;
+}
+
+li {
+    margin: 8px 0;
+    color: #b6bdff;
+}
+
+a {
+    color: #8c00ff;
+    text-decoration: none;
+    border-bottom: 2px dotted #6969ff;
+}
+
+.version {
+    text-align: center;
+    font-size: 26px;
+    background: #1800822d;
+    padding: 30px;
+    position: relative;  
+}
+
+.version-image {
+    width: 100px;  
+    height: auto;
+    display: block;
+    margin: 0 auto 15px auto;  
+    image-rendering: pixelated;
+}
+
+.song {
+    background: rgba(48, 59, 206, 0.164) !important;
+    margin: 8px 0;
+    border-left: 8px solid #4c11b9;
+    padding: 20px;
+}
+
+.gallery {
+    column-count: 3;
+    column-gap: 4px;
+    margin-top: 15px;
+}
+
+.gallery img {
+    display: block;
+    pointer-events: none;
+    width: 100%;
+    height: auto;
+    margin-bottom: 4px;
+    break-inside: avoid;
+    page-break-inside: avoid;
+    filter: none !important;
+}
+
+.footer {
+    text-align: center;
+    font-size: 26px;
+    padding: 35px;
+}
+
+#pixle1 {
+    position: fixed;
+    bottom: 0px;
+    left: -250px;
+    z-index: 9999;
+    -webkit-user-select: none;
+    image-rendering: pixelated;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    width: 800px;
+    height: auto;
+    display: block;
+    user-select: none;
+    pointer-events: none; 
+}
+
+#pixle2 {
+    position: fixed;
+    bottom:-20px;
+    right: -310px;
+    z-index: 9999;
+    width: 1000px;
+    height: auto;
+    display: block;
+    image-rendering: pixelated;
+    user-select: none;
+    pointer-events: none; 
+}
+
+#pixle3 {
+    position: fixed;
+    bottom:122px;
+    right: 50px;
+    z-index: 9999;
+    width: 290px;
+    height: auto;
+    display: block;
+    image-rendering: pixelated;
+    user-select: none;
+    pointer-events: none; 
+}
+
+@media (max-width: 600px) {
+    .gallery {
+        column-count: 2;
+    }
+}
