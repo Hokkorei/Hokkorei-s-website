@@ -119,13 +119,13 @@ a {
     padding: 20px;
 }
 
-.gallery {
+#gallery {
     column-count: 3;
     column-gap: 4px;
     margin-top: 15px;
 }
 
-.gallery img {
+#gallery img {
     display: block;
     pointer-events: none;
     width: 100%;
