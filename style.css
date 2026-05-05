@@ -105,6 +105,41 @@ a {
     image-rendering: pixelated;
 }
 
+.song {
+    text-align: center;
+    background: #4d30ce2d;
+    position: relative;  
+    margin: 8px 0;
+    word-break: break-word;
+    border-left: 8px solid #4110b3;
+    padding: 20px;
+}
+
+.song p:first-child {
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 15px;
+    justify-content: center; 
+    align-items: flex-start; 
+}
+
+.gallery img {
+    display: block;
+    pointer-events: none;
+    
+    width: auto;
+    height: auto;
+    
+    max-width: 200px;
+    max-height: 200px;
+}
+
 .footer {
     text-align: center;
     font-size: 26px;
@@ -151,43 +186,4 @@ a {
     image-rendering: pixelated;
     user-select: none;
     pointer-events: none; 
-}
-
-@media (inverted-colors: inverted) {
-    * {
-        background-color: transparent !important;
-        color-scheme: dark !important;
-    }
-    
-    body {
-        background-image: none !important;
-        background-color: #000 !important;
-    }
-    
-    img, video, iframe {
-        filter: invert(1) hue-rotate(180deg) !important;
-    }
-}
-
-:root {
-    color-scheme: dark light;
-    forced-color-adjust: none;
-}
-
-@media (prefers-color-scheme: dark) {
-    body {
-        background-image: url('https://shared.akamai.steamstatic.com/community_assets/images/items/1512480/bbfa511541b6196916a8d3e06e827368dab04872.jpg') !important;
-        background-color: #000 !important;
-    }
-}
-
-* {
-    forced-color-adjust: none !important;
-    color-scheme: only dark !important;
-}
-
-body {
-    background-color: #000 !important;
-    background-image: url('https://shared.akamai.steamstatic.com/community_assets/images/items/1512480/bbfa511541b6196916a8d3e06e827368dab04872.jpg') !important;
-    background-blend-mode: normal !important;
 }
