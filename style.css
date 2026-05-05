@@ -119,11 +119,6 @@ a {
     padding: 20px;
 }
 
-.song p:first-child {
-    font-size: 26px;
-    margin-bottom: 15px;
-}
-
 .gallery {
     column-count: 3;
     column-gap: 4px;
