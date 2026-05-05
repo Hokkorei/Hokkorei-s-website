@@ -106,11 +106,8 @@ a {
 }
 
 .song {
-    text-align: center;
     background: #4d30ce2d;
-    position: relative;  
     margin: 8px 0;
-    word-break: break-word;
     border-left: 8px solid #4110b3;
     padding: 20px;
 }
@@ -121,21 +118,19 @@ a {
 }
 
 .gallery {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 4px;  
+    column-count: 3;
+    column-gap: 4px;
     margin-top: 15px;
-    justify-content: flex-start;
 }
 
 .gallery img {
     display: block;
     pointer-events: none;
-    width: auto;
+    width: 100%;
     height: auto;
-
+    margin-bottom: 4px;
+    break-inside: avoid;
 }
-
 
 .footer {
     text-align: center;
